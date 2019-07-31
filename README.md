@@ -1,5 +1,5 @@
-# react-ts-sample
-TypeScript + Reactの遊び場
+# my-portfolio-ts
+TypeScript + Reactで作成したポートフォリオ
 
 ## 使用フレームワーク・言語
 - JavaScript
@@ -8,6 +8,8 @@ TypeScript + Reactの遊び場
 - Node.js
 
 ## 使用ツール・ライブラリ
+- redux
+- react-router
+- typescript-fsa
 - storybook
 - jest
-- 
