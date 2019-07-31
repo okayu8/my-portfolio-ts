@@ -5,7 +5,6 @@ TypeScript + Reactで作成したポートフォリオ
 - JavaScript
 - TypeScript
 - React.js
-- Node.js
 
 ## 使用ツール・ライブラリ
 - redux
