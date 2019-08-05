@@ -1,4 +1,5 @@
 import * as React from "react";
+import styled from 'styled-components';
 
 export interface IExampleProps {
     /** 表示するテキスト */
@@ -19,14 +20,18 @@ const Example = (props: IExampleProps) => {
     const countDown = React.useCallback(() => countChg(prev => prev - 1), []);
 
     return (
-        <div>
+        <StyledExample>
             {flag && <p>{text}</p>}
             <button onClick={action}>ボタン</button>
             <p>count:{count}</p>
             <button onClick={countUp}>+</button>
             <button onClick={countDown}>-</button>
-        </div>
+        </StyledExample>
     );
 };
+
+const StyledExample = styled.div`
+    padding: 24px;
+`
 
 export default Example;
