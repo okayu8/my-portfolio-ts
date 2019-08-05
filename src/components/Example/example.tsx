@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import * as React from "react";
 
 export interface IExampleProps {
     /** 表示するテキスト */
@@ -14,9 +14,9 @@ export interface IExampleProps {
 
 const Example = (props: IExampleProps) => {
     const { text, flag, action } = props;
-    const [count, countChg] = useState(0);
-    const countUp = useCallback(() => countChg(prev => prev + 1), []);
-    const countDown = useCallback(() => countChg(prev => prev - 1), []);
+    const [count, countChg] = React.useState(0);
+    const countUp = React.useCallback(() => countChg(prev => prev + 1), []);
+    const countDown = React.useCallback(() => countChg(prev => prev - 1), []);
 
     return (
         <div>

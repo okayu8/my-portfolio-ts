@@ -1,6 +1,9 @@
 import * as React from 'react';
 import './App.css';
 import TsTest from './components/TsTest';
+import Example from './components/Example';
+import { action } from "@storybook/addon-actions";
+import { text, boolean } from "@storybook/addon-knobs";
 
 class App extends React.Component {
   public render() {
@@ -17,6 +20,11 @@ class App extends React.Component {
           {/* 読み込みが完了したら表示する要素 */}
           <p>読み込み完了</p>
         </div>
+        <Example
+          text={text("テキスト", "ああああ")}
+          flag={boolean("テキスト表示", true)}
+          action={action("ぽちっとな")}
+        />
       </div>
     );
   }
