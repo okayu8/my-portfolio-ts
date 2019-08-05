@@ -1,15 +1,15 @@
 import * as React from 'react';
 import './App.css';
 import TsTest from './components/TsTest';
-import logo from './logo.svg';
-
+import Example from './components/Example';
+import { action } from "@storybook/addon-actions";
+import { text, boolean } from "@storybook/addon-knobs";
 
 class App extends React.Component {
   public render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
@@ -20,6 +20,11 @@ class App extends React.Component {
           {/* 読み込みが完了したら表示する要素 */}
           <p>読み込み完了</p>
         </div>
+        <Example
+          text={text("テキスト", "ああああ")}
+          flag={boolean("テキスト表示", true)}
+          action={action("ぽちっとな")}
+        />
       </div>
     );
   }
