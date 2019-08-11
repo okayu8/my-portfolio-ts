@@ -1,7 +1,7 @@
-import * as React from 'react';
-import './App.css';
-import TsTest from './components/TsTest';
-import Example from './components/example';
+import * as React from "react";
+import "./App.css";
+import TsTest from "./components/TsTest";
+import Example from "./components/pages/example";
 import { action } from "@storybook/addon-actions";
 import { text, boolean } from "@storybook/addon-knobs";
 
