@@ -10,8 +10,8 @@
   overflow: hidden;
 }
 
-.App-header:before{
-  content: '';
+.App-header:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -37,6 +37,111 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box {
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+div.circle {
+  width: 80%;
+  height: 80%;
+  border: solid thin #80808080;
+  border-radius: 100%;
+  position: absolute;
+}
+div.circle.layer-0 {
+  animation: wave-0 5s infinite;
+}
+div.circle.layer-1 {
+  animation: wave-1 5s infinite;
+}
+div.circle.layer-2 {
+  animation: wave-2 5s infinite;
+}
+div.circle.layer-3 {
+  animation: wave-3 5s infinite;
+}
+
+@keyframes wave-0 {
+  0% {
+    width: 0%;
+    height: 0%;
+    box-shadow: 0 0 100px inset #80808080;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes wave-1 {
+  0% {
+    width: 0%;
+    height: 0%;
+    box-shadow: 0 0 100px inset #80808080;
+  }
+  50% {
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes wave-2 {
+  0% {
+    width: 0%;
+    height: 0%;
+    box-shadow: 0 0 100px inset #80808080;
+  }
+  50% {
+    width: 75%;
+    height: 75%;
+    opacity: 0;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes wave-3 {
+  0% {
+    width: 0%;
+    height: 0%;
+    box-shadow: 0 0 100px inset #80808080;
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
 }

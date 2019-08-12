@@ -20,6 +20,12 @@ class App extends React.Component {
           {/* 読み込みが完了したら表示する要素 */}
           <p>読み込み完了</p>
         </div>
+        <div className="box">
+          <div className="circle layer-0" />
+          <div className="circle layer-1" />
+          <div className="circle layer-2" />
+          <div className="circle layer-3" />
+        </div>
         <Example
           text={text("テキスト", "ああああ")}
           flag={boolean("テキスト表示", true)}
