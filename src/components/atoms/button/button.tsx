@@ -10,7 +10,6 @@ interface Props {
 
 const Button = (props: Props) => {
   const { name, onclick } = props;
-
   return <StyledButton onClick={onclick}>{name}</StyledButton>;
 };
 
@@ -24,6 +23,11 @@ const Button = (props: Props) => {
 // `;
 const StyledButton = styled.button`
   padding: 8px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #bbbbbb1f;
+  border: 1px solid #fff;
+  border-radius: 4px;
 `;
 
 export default Button;
