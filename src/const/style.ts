@@ -1,6 +1,2 @@
-namespace Style {}
-
-namespace Style.Button {
-  export const PRIMARY = "P";
-  export const WARN = "W";
-}
+const BUTTON_PRIMARY = "P";
+const BUTTON_WARN = "W";
