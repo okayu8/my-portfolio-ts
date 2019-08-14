@@ -13,19 +13,32 @@
 .App-header:before {
   content: "";
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   width: 120%;
   height: 50%;
   margin: 3% -10% 0;
-  background: #011931;
+  background: #00154294;
   -webkit-transform-origin: left center;
   -ms-transform-origin: left center;
   transform-origin: left center;
-  -webkit-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
+  -webkit-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
   z-index: -1;
+  animation: back-0 2s;
+}
+
+@keyframes back-0 {
+  from {
+    top: 100%;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
 }
 
 .App-title {
