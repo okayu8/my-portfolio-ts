@@ -15,4 +15,8 @@ export namespace STYLE {
     export const SMALL = 14;
     export const NOMAL = 16;
   }
+  export namespace COLOR {
+    export const BLACK = "#000";
+    export const WHITE = "#fff";
+  }
 }
