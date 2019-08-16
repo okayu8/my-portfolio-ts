@@ -24,7 +24,6 @@ class App extends React.Component {
           <div className="circle layer-0" />
           <div className="circle layer-1" />
           <div className="circle layer-2" />
-          <div className="circle layer-3" />
         </div>
         <Example
           text={text("テキスト", "ああああ")}

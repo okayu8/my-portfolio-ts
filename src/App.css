@@ -10,26 +10,13 @@
   color: white;
   position: relative;
   overflow: hidden;
-}
-
-.App-header:before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 120%;
-  height: 50%;
-  margin: 3% -10% 0;
-  background: #00154294;
-  -webkit-transform-origin: left center;
-  -ms-transform-origin: left center;
-  transform-origin: left center;
-  -webkit-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  transform: rotate(2deg);
-  z-index: -1;
-  animation: back-0 2s;
+  /* linear-gradient()関数の引数の一番前に「-45deg」と指定 */
+  background-image: linear-gradient(
+    -10deg,
+    rgb(2, 0, 29) 50%,
+    rgb(16, 13, 58) 50%,
+    rgb(16, 13, 58)
+  );
 }
 
 @keyframes back-0 {
@@ -72,7 +59,7 @@
 div.circle {
   width: 80%;
   height: 80%;
-  border: solid thin #80808080;
+  border: solid thin #aaacbe60;
   border-radius: 100%;
   position: absolute;
 }
@@ -85,15 +72,12 @@ div.circle.layer-1 {
 div.circle.layer-2 {
   animation: wave-2 5s infinite;
 }
-div.circle.layer-3 {
-  animation: wave-3 5s infinite;
-}
 
 @keyframes wave-0 {
   0% {
     width: 0%;
     height: 0%;
-    box-shadow: 0 0 100px inset #80808080;
+    box-shadow: 0 0 100px inset #6b79c73f;
   }
   50% {
     width: 100%;
@@ -111,25 +95,7 @@ div.circle.layer-3 {
   0% {
     width: 0%;
     height: 0%;
-    box-shadow: 0 0 100px inset #80808080;
-  }
-  50% {
-    width: 90%;
-    height: 90%;
-    opacity: 0;
-  }
-  100% {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-  }
-}
-
-@keyframes wave-2 {
-  0% {
-    width: 0%;
-    height: 0%;
-    box-shadow: 0 0 100px inset #80808080;
+    box-shadow: 0 0 100px inset #6b79c73f;
   }
   50% {
     width: 75%;
@@ -143,11 +109,11 @@ div.circle.layer-3 {
   }
 }
 
-@keyframes wave-3 {
+@keyframes wave-2 {
   0% {
     width: 0%;
     height: 0%;
-    box-shadow: 0 0 100px inset #80808080;
+    box-shadow: 0 0 100px inset #6b79c73f;
   }
   50% {
     width: 50%;
