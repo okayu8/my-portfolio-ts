@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-export interface IExampleProps {
+interface IExampleProps {
   /** 表示するテキスト */
   text: string;
   /**

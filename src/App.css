@@ -1,31 +1,47 @@
 .App {
   text-align: center;
-}
-
-.App-header {
-  height: 80px;
-  padding: 24px;
-  color: white;
-  position: relative;
+  background-color: rgb(51, 51, 51);
+  color: #fff;
   overflow: hidden;
 }
 
-.App-header:before{
-  content: '';
+.App-header {
+  height: 300px;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  position: relative;
+  /* overflow: hidden; */
+  /* linear-gradient()関数の引数の一番前に「-45deg」と指定 */
+  /* background-image: linear-gradient(
+    -10deg,
+    rgb(0, 0, 0) 50%,
+    rgba(7, 4, 53, 0.74) 50%,
+    rgb(7, 4, 53, 0.74)
+  ); */
+  animation: back-0 2s;
+}
+
+.App-header::after {
+  content: "";
+  display: block;
   position: absolute;
-  top: 0;
   left: 0;
-  width: 120%;
-  height: 50%;
-  margin: 3% -10% 0;
-  background: #011931;
-  -webkit-transform-origin: left center;
-  -ms-transform-origin: left center;
-  transform-origin: left center;
-  -webkit-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  z-index: -1;
+  bottom: 0;
+  border-top: 60px solid transparent;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid rgb(51, 51, 51);
+  border-bottom: 60px solid rgb(51, 51, 51);
+}
+
+@keyframes back-0 {
+  from {
+    top: -100vh;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
 }
 
 .App-title {
@@ -36,7 +52,82 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.box {
+  width: 8vw;
+  height: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+div.circle {
+  width: 80%;
+  height: 80%;
+  border: solid thin #aaacbe60;
+  border-radius: 100%;
+  position: absolute;
+}
+div.circle.layer-0 {
+  animation: wave-0 5s infinite;
+}
+div.circle.layer-1 {
+  animation: wave-1 5s infinite;
+}
+div.circle.layer-2 {
+  animation: wave-2 5s infinite;
+}
+
+@keyframes wave-0 {
+  0% {
+    width: 0%;
+    height: 0%;
+    box-shadow: 0 0 100px inset #6b79c73f;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes wave-1 {
+  0% {
+    width: 0%;
+    height: 0%;
+    box-shadow: 0 0 100px inset #6b79c73f;
+  }
+  50% {
+    width: 75%;
+    height: 75%;
+    opacity: 0;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes wave-2 {
+  0% {
+    width: 0%;
+    height: 0%;
+    box-shadow: 0 0 100px inset #6b79c73f;
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
 }
