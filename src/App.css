@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* 縦並び */
+  /* flex-direction: column; */
   height: 90vh;
   animation: back-0 2s;
 }
@@ -81,10 +81,32 @@
   }
 }
 
-.App-title {
-  font-size: 1.5em;
-  margin: 0px;
-  padding: 8px;
+.App-title-first {
+  font-size: 80px;
+  position: absolute;
+  top: 22vh;
+  left: 32vw;
+}
+
+.App-title-second {
+  font-size: 80px;
+  position: absolute;
+  top: 36vh;
+  left: 48vw;
+}
+
+@media only screen and (max-width: 780px) {
+  .App-title-first {
+    font-size: 48px;
+    top: 28vh;
+    left: 24vw;
+  }
+
+  .App-title-second {
+    font-size: 48px;
+    top: 36vh;
+    left: 40vw;
+  }
 }
 
 .App-intro {
