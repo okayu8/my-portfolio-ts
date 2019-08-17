@@ -16,7 +16,7 @@
   align-items: center;
   /* flex-direction: column; */
   height: 90vh;
-  animation: back-0 2s;
+  animation: fall-0 2s;
 }
 
 .App-content::after {
@@ -31,7 +31,7 @@
   border-bottom: 60px solid rgb(71, 71, 71);
 }
 
-@keyframes back-0 {
+@keyframes fall-0 {
   0% {
     top: -100vh;
     left: 0;
@@ -78,6 +78,40 @@
   }
   50% {
     left: -20vw;
+  }
+}
+
+.App-back {
+  animation: fadeIn-0 4s ease 0s 1 normal;
+  -webkit-animation: fadeIn-0 4s ease 0s 1 normal;
+}
+
+.App-title {
+  animation: fadeIn-1 3s ease 0s 1 normal;
+  -webkit-animation: fadeIn-1 3s ease 0s 1 normal;
+}
+
+@keyframes fadeIn-0 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn-1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
