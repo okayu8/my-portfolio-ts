@@ -81,6 +81,22 @@
   }
 }
 
+.App-back-first {
+  font-size: 360px;
+  color: rgba(221, 221, 221, 0.08);
+  position: absolute;
+  top: -8vh;
+  left: 12vw;
+}
+
+.App-back-second {
+  font-size: 360px;
+  color: rgba(221, 221, 221, 0.24);
+  position: absolute;
+  top: 8vh;
+  left: 16vw;
+}
+
 .App-title-first {
   font-size: 80px;
   position: absolute;

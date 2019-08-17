@@ -7,6 +7,8 @@ class App extends React.Component {
       <div className="App">
         <div className="wrap">
           <div className="App-content">
+            <span className="App-back-first">Kataoka</span>
+            <span className="App-back-second">Yutaro</span>
             <h1 className="App-title-first">Kataoka</h1>
             <h1 className="App-title-second">Yutaro</h1>
             <div className="box">
