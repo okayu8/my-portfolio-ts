@@ -82,19 +82,21 @@
 }
 
 .App-back-first {
-  font-size: 360px;
+  font-size: 380px;
   color: rgba(221, 221, 221, 0.08);
+  font-weight: 800;
   position: absolute;
   top: -8vh;
   left: 12vw;
 }
 
 .App-back-second {
-  font-size: 360px;
+  font-size: 380px;
   color: rgba(221, 221, 221, 0.24);
+  font-weight: 800;
   position: absolute;
-  top: 8vh;
-  left: 16vw;
+  top: 12vh;
+  left: 20vw;
 }
 
 .App-title-first {
