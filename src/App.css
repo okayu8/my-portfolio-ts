@@ -101,6 +101,7 @@
 
 .App-title-first {
   font-size: 80px;
+  font-weight: 800;
   position: absolute;
   top: 22vh;
   left: 32vw;
@@ -108,12 +109,30 @@
 
 .App-title-second {
   font-size: 80px;
+  font-weight: 800;
   position: absolute;
   top: 36vh;
   left: 48vw;
 }
 
 @media only screen and (max-width: 780px) {
+  .App-back-first {
+    font-size: 260px;
+    color: rgba(221, 221, 221, 0.08);
+    font-weight: 800;
+    position: absolute;
+    top: 8vh;
+    left: 8vw;
+  }
+
+  .App-back-second {
+    font-size: 260px;
+    color: rgba(221, 221, 221, 0.24);
+    font-weight: 800;
+    position: absolute;
+    top: 24vh;
+    left: 16vw;
+  }
   .App-title-first {
     font-size: 48px;
     top: 28vh;

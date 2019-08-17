@@ -9,8 +9,8 @@ class App extends React.Component {
           <div className="App-content">
             <span className="App-back-first">Kataoka</span>
             <span className="App-back-second">Yutaro</span>
-            <h1 className="App-title-first">Kataoka</h1>
-            <h1 className="App-title-second">Yutaro</h1>
+            <span className="App-title-first">Kataoka</span>
+            <span className="App-title-second">Yutaro</span>
             <div className="box">
               <div className="circle layer-0" />
               <div className="circle layer-1" />
