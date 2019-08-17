@@ -58,8 +58,8 @@
 }
 
 .App-side {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -100vw;
   left: -20vw;
   height: 120vh;
   width: 24vw;
