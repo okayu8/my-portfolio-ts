@@ -59,7 +59,7 @@
 
 .App-side {
   position: relative;
-  top: -100vw;
+  top: -130vh;
   left: -20vw;
   height: 120vh;
   width: 24vw;
@@ -157,8 +157,8 @@
     color: rgba(221, 221, 221, 0.08);
     font-weight: 800;
     position: absolute;
-    top: 8vh;
-    left: 8vw;
+    top: -4vh;
+    left: 12vw;
   }
 
   .App-back-second {
@@ -166,8 +166,8 @@
     color: rgba(221, 221, 221, 0.24);
     font-weight: 800;
     position: absolute;
-    top: 24vh;
-    left: 16vw;
+    top: 20vh;
+    left: 20vw;
   }
   .App-title-first {
     font-size: 48px;
@@ -179,6 +179,10 @@
     font-size: 48px;
     top: 36vh;
     left: 40vw;
+  }
+
+  .App-side {
+    top: -150vh;
   }
 }
 
