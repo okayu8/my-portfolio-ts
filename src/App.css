@@ -60,9 +60,9 @@
 .App-side {
   position: relative;
   top: -130vh;
-  left: -20vw;
-  height: 120vh;
-  width: 24vw;
+  left: -48vw;
+  height: 150vh;
+  width: 50vw;
   background-color: rgba(131, 131, 131, 0.363);
   transform-origin: left top;
   transform: rotate(-5deg);
@@ -77,7 +77,7 @@
     left: -100vw;
   }
   50% {
-    left: -20vw;
+    left: -48vw;
   }
 }
 
@@ -116,7 +116,7 @@
 }
 
 .App-back-first {
-  font-size: 380px;
+  font-size: 400px;
   color: rgba(221, 221, 221, 0.08);
   font-weight: 800;
   position: absolute;
@@ -126,7 +126,7 @@
 }
 
 .App-back-second {
-  font-size: 380px;
+  font-size: 400px;
   color: rgba(221, 221, 221, 0.24);
   font-weight: 800;
   position: absolute;
