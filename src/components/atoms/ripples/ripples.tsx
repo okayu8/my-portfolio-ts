@@ -1,16 +1,22 @@
 import * as React from "react";
 import styled from "styled-components";
 
-// interface IProps {
-//   width?: number;
-//   height?: number;
-//   vertical: number;
-//   horizon: number;
-// }
+interface IProps {
+  width?: number;
+  height?: number;
+  vertical: number;
+  horizon: number;
+}
 
-const Ripples = () => {
+const Ripples = (props: IProps) => {
+  const { width, height, vertical, horizon } = props;
   return (
-    <StyledBox>
+    <StyledBox
+      width={width}
+      height={height}
+      vertical={vertical}
+      horizon={horizon}
+    >
       <StyledCircle1 />
       <StyledCircle2 />
       <StyledCircle3 />
@@ -18,19 +24,19 @@ const Ripples = () => {
   );
 };
 
-// interface IStyleProps {
-//   // width?: number;
-//   // // height?: number;
-//   // // vertical: number;
-//   // // horizon: number;
-// }
+interface IStyleProps {
+  width?: number;
+  height?: number;
+  vertical: number;
+  horizon: number;
+}
 
 const StyledBox = styled.div`
-  width: 8vw;
-  height: 8vw;
+  width: ${(props: IStyleProps) => props.width || 8}vw;
+  height: ${(props: IStyleProps) => props.height || 8}vw;
   display: flex;
-  top: 0px
-  left: 0px;
+  top: ${(props: IStyleProps) => props.vertical}px
+  left: ${(props: IStyleProps) => props.horizon}px;
   align-items: center;
   justify-content: center;
   position: relative;
