@@ -1,6 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
 
+// interface IProps {
+//   width?: number;
+//   height?: number;
+//   vertical: number;
+//   horizon: number;
+// }
+
 const Ripples = () => {
   return (
     <StyledBox>
@@ -11,10 +18,19 @@ const Ripples = () => {
   );
 };
 
+// interface IStyleProps {
+//   // width?: number;
+//   // // height?: number;
+//   // // vertical: number;
+//   // // horizon: number;
+// }
+
 const StyledBox = styled.div`
   width: 8vw;
   height: 8vw;
   display: flex;
+  top: 0px
+  left: 0px;
   align-items: center;
   justify-content: center;
   position: relative;
