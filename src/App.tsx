@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./App.css";
+import BackgroundFont from "./components/molecules/backgroung-font";
 
 class App extends React.Component {
   public render() {
@@ -15,10 +16,11 @@ class App extends React.Component {
                 Yutaro
               </span>
             </div>
-            <div className="App-title">
+            <BackgroundFont />
+            {/* <div className="App-title">
               <span className="App-title-first">Kataoka</span>
               <span className="App-title-second">Yutaro</span>
-            </div>
+            </div> */}
           </div>
           <div className="App-footer" />
           <div className="App-side" />
