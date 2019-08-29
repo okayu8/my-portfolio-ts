@@ -1,11 +1,13 @@
 import React from "react";
-import Ripples from "./";
+import BackgroundFont from "./";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 
-const components = storiesOf("Ripples", module);
+const components = storiesOf("BackgroundFont", module);
 components
   .addDecorator(withKnobs)
   .addDecorator(withInfo({ inline: true }))
-  .add("default", () => <Ripples vertical={8} horizon={3} />);
+  .add("default", () => (
+    <BackgroundFont firstName="Yutaro" lastName="Kataoka" />
+  ));

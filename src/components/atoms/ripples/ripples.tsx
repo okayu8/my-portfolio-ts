@@ -31,12 +31,12 @@ interface IStyleProps {
   horizon: number;
 }
 
-const StyledBox = styled.div`
-  width: ${(props: IStyleProps) => props.width || 8}vw;
-  height: ${(props: IStyleProps) => props.height || 8}vw;
+const StyledBox = styled.div<IStyleProps>`
+  width: ${props => props.width || 8}vw;
+  height: ${props => props.height || 8}vw;
   display: flex;
-  top: ${(props: IStyleProps) => props.vertical}px
-  left: ${(props: IStyleProps) => props.horizon}px;
+  top: ${props => props.vertical}px
+  left: ${props => props.horizon}px;
   align-items: center;
   justify-content: center;
   position: relative;
