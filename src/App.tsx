@@ -8,14 +8,6 @@ class App extends React.Component {
       <div className="App">
         <div className="wrap">
           <div className="App-content">
-            {/* <div className="App-back">
-              <span id="back-0" className="App-back-first">
-                Kataoka
-              </span>
-              <span id="back-1" className="App-back-second">
-                Yutaro
-              </span>
-            </div> */}
             <BackgroundFont firstName="Yutaro" lastName="Kataoka" />
             <div className="App-title">
               <span className="App-title-first">Kataoka</span>

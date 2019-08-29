@@ -73,6 +73,14 @@ const StyledLastName = styled.span`
   top: -55vh;
   left: -40vw;
   transform: translate(0%, 0%);
+  @media only screen and (max-width: 780px) {
+    font-size: 250px;
+    color: rgba(221, 221, 221, 0.08);
+    font-weight: 800;
+    position: absolute;
+    top: -40vh;
+    left: -40vw;
+  }
 `;
 
 const StyledFirstName = styled.span`
@@ -83,6 +91,14 @@ const StyledFirstName = styled.span`
   top: -30vh;
   left: -35vw;
   transform: translate(0%, 0%);
+  @media only screen and (max-width: 780px) {
+    font-size: 250px;
+    color: rgba(221, 221, 221, 0.24);
+    font-weight: 800;
+    position: absolute;
+    top: -25vh;
+    left: -35vw;
+  }
 `;
 
 export default BackgroundFont;

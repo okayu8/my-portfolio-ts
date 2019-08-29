@@ -9,9 +9,9 @@
 
 .App-content {
   height: 90vh;
-  background: -moz-linear-gradient(top left, #050505 50%, #001729);
-  background: -webkit-linear-gradient(top left, #050505 50%, #001729);
-  background: linear-gradient(to left, #001729, #050505 50%);
+  background: -moz-linear-gradient(to left, #001729, #050505 60%);
+  background: -webkit-linear-gradient(to left, #001729, #050505 60%);
+  background: linear-gradient(-150deg, #001729, #050505 60%);
   color: white;
   position: relative;
   display: flex;
@@ -119,26 +119,6 @@
   }
 }
 
-.App-back-first {
-  font-size: 400px;
-  color: rgba(221, 221, 221, 0.08);
-  font-weight: 800;
-  position: absolute;
-  top: -8vh;
-  left: 12vw;
-  transform: translate(0%, 0%);
-}
-
-.App-back-second {
-  font-size: 400px;
-  color: rgba(221, 221, 221, 0.24);
-  font-weight: 800;
-  position: absolute;
-  top: 12vh;
-  left: 20vw;
-  transform: translate(0%, 0%);
-}
-
 .App-title-first {
   font-size: 80px;
   font-weight: 800;
@@ -156,22 +136,6 @@
 }
 
 @media only screen and (max-width: 780px) {
-  .App-back-first {
-    font-size: 260px;
-    color: rgba(221, 221, 221, 0.08);
-    font-weight: 800;
-    position: absolute;
-    top: -4vh;
-    left: 12vw;
-  }
-  .App-back-second {
-    font-size: 260px;
-    color: rgba(221, 221, 221, 0.24);
-    font-weight: 800;
-    position: absolute;
-    top: 20vh;
-    left: 20vw;
-  }
   .App-title-first {
     font-size: 48px;
     top: 28vh;
