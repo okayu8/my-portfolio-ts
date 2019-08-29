@@ -16,7 +16,7 @@ class App extends React.Component {
                 Yutaro
               </span>
             </div> */}
-            <BackgroundFont />
+            <BackgroundFont firstName="Yutaro" lastName="Kataoka" />
             <div className="App-title">
               <span className="App-title-first">Kataoka</span>
               <span className="App-title-second">Yutaro</span>

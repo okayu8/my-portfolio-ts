@@ -9,6 +9,5 @@ components
   .addDecorator(withKnobs)
   .addDecorator(withInfo({ inline: true }))
   .add("default", () => (
-    // <BackgroundFont firstName="Yutaro" lastName="Kataoka" />
-    <BackgroundFont />
+    <BackgroundFont firstName="Yutaro" lastName="Kataoka" />
   ));

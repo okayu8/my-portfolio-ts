@@ -2,23 +2,24 @@ import * as React from "react";
 import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
 
-// interface IProps {
-//   firstName: string;
-//   lastName: string;
-//   xy: any
-// }
+interface IProps {
+  firstName: string;
+  lastName: string;
+}
 
 const calc = (x: number, y: number) => [
   x - window.innerWidth / 2,
   y - window.innerHeight / 2
 ];
-const trans1 = (xy: any) => `translate3d(${xy[0] / 10}px,${xy[1] / 10}px,0)`;
-const trans2 = (xy: any) =>
-  `translate3d(${xy[0] / 8 + 35}px,${xy[1] / 8 - 230}px,0)`;
 
-const BackgroundFont = () => {
-  // const { firstName, lastName } = props;
-  const [props, set] = useSpring(() => ({
+// @ts-ignore
+const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
+// @ts-ignore
+const trans2 = (x, y) => `translate3d(${x / 4}px,${y / 5}px,0)`;
+
+const BackgroundFont = (props: IProps) => {
+  const { firstName, lastName } = props;
+  const [prlxProps, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 }
   }));
@@ -27,21 +28,21 @@ const BackgroundFont = () => {
     <StyledBack
       onMouseMove={({ clientX: x, clientY: y }) => {
         set({ xy: calc(x, y) });
-        // @ ts-ignore
-        console.log(props.xy);
       }}
     >
       <animated.div
         id="back-0"
-        style={{ transform: props.xy.interpolate(trans1) }}
+        // @ts-ignore
+        style={{ transform: prlxProps.xy.interpolate(trans1) }}
       >
-        <StyledLastName>Kataoka</StyledLastName>
+        <StyledLastName>{lastName}</StyledLastName>
       </animated.div>
       <animated.div
         id="back-1"
-        style={{ transform: props.xy.interpolate(trans2) }}
+        // @ts-ignore
+        style={{ transform: prlxProps.xy.interpolate(trans2) }}
       >
-        <StyledFirstName>Yutaro</StyledFirstName>
+        <StyledFirstName>{firstName}</StyledFirstName>
       </animated.div>
     </StyledBack>
   );
@@ -64,23 +65,23 @@ const StyledBack = styled.div`
   }
 `;
 
-const StyledFirstName = styled.span`
-  font-size: 400px;
-  color: rgba(221, 221, 221, 0.24);
-  font-weight: 800;
-  position: absolute;
-  top: 12vh;
-  left: 20vw;
-  transform: translate(0%, 0%);
-`;
-
 const StyledLastName = styled.span`
   font-size: 400px;
   color: rgba(221, 221, 221, 0.08);
   font-weight: 800;
   position: absolute;
-  top: -8vh;
-  left: 12vw;
+  top: -55vh;
+  left: -40vw;
+  transform: translate(0%, 0%);
+`;
+
+const StyledFirstName = styled.span`
+  font-size: 400px;
+  color: rgba(221, 221, 221, 0.24);
+  font-weight: 800;
+  position: absolute;
+  top: -30vh;
+  left: -35vw;
   transform: translate(0%, 0%);
 `;
 
