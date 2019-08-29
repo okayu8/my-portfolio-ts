@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./App.css";
+import BackgroundFont from "./components/molecules/backgroung-font";
 
 class App extends React.Component {
   public render() {
@@ -7,22 +8,18 @@ class App extends React.Component {
       <div className="App">
         <div className="wrap">
           <div className="App-content">
-            <div className="App-back">
+            {/* <div className="App-back">
               <span id="back-0" className="App-back-first">
                 Kataoka
               </span>
               <span id="back-1" className="App-back-second">
                 Yutaro
               </span>
-            </div>
+            </div> */}
+            <BackgroundFont firstName="Yutaro" lastName="Kataoka" />
             <div className="App-title">
               <span className="App-title-first">Kataoka</span>
               <span className="App-title-second">Yutaro</span>
-            </div>
-            <div className="box">
-              <div className="circle layer-0" />
-              <div className="circle layer-1" />
-              <div className="circle layer-2" />
             </div>
           </div>
           <div className="App-footer" />
