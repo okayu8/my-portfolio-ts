@@ -1,7 +1,6 @@
 import * as React from "react";
 import "./App.css";
-import BackgroundFont from "./components/molecules/backgroung-font";
-import TopTitle from "./components/atoms/top-title";
+import Top from "./components/pages/top";
 
 class App extends React.Component {
   public render() {
@@ -9,8 +8,7 @@ class App extends React.Component {
       <div className="App">
         <div className="wrap">
           <div className="App-content">
-            <BackgroundFont firstName="Yutaro" lastName="Kataoka" />
-            <TopTitle firstName="Yutaro" lastName="Kataoka" />
+            <Top />
           </div>
           <div className="App-footer" />
           <div className="App-side" />
