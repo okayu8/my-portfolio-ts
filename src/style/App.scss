@@ -8,13 +8,9 @@
 
 .App-content {
   height: 90vh;
-  background: -moz-linear-gradient(top left, rgb(5, 5, 5) 50%, rgb(0, 23, 41));
-  background: -webkit-linear-gradient(
-    top left,
-    rgb(5, 5, 5) 50%,
-    rgb(0, 23, 41)
-  );
-  background: linear-gradient(top right, rgb(0, 23, 41), rgb(5, 5, 5) 50%);
+  background: -moz-linear-gradient(-150deg, #001729, #050505 60%);
+  background: -webkit-linear-gradient(-150deg, #001729, #050505 60%);
+  background: linear-gradient(-150deg, #001729, #050505 60%);
   color: white;
   position: relative;
   display: flex;
@@ -119,26 +115,6 @@
   }
 }
 
-.App-back-first {
-  font-size: 400px;
-  color: rgba(221, 221, 221, 0.08);
-  font-weight: 800;
-  position: absolute;
-  top: -8vh;
-  left: 12vw;
-  transform: translate(0%, 0%);
-}
-
-.App-back-second {
-  font-size: 400px;
-  color: rgba(221, 221, 221, 0.24);
-  font-weight: 800;
-  position: absolute;
-  top: 12vh;
-  left: 20vw;
-  transform: translate(0%, 0%);
-}
-
 .App-title-first {
   font-size: 80px;
   font-weight: 800;
@@ -156,23 +132,6 @@
 }
 
 @media only screen and (max-width: 780px) {
-  .App-back-first {
-    font-size: 260px;
-    color: rgba(221, 221, 221, 0.08);
-    font-weight: 800;
-    position: absolute;
-    top: -4vh;
-    left: 12vw;
-  }
-
-  .App-back-second {
-    font-size: 260px;
-    color: rgba(221, 221, 221, 0.24);
-    font-weight: 800;
-    position: absolute;
-    top: 20vh;
-    left: 20vw;
-  }
   .App-title-first {
     font-size: 48px;
     top: 28vh;
@@ -202,75 +161,4 @@
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-div.circle {
-  width: 80%;
-  height: 80%;
-  border: solid thin #aaacbe60;
-  border-radius: 100%;
-  position: absolute;
-}
-div.circle.layer-0 {
-  animation: wave-0 5s infinite;
-}
-div.circle.layer-1 {
-  animation: wave-1 5s infinite;
-}
-div.circle.layer-2 {
-  animation: wave-2 5s infinite;
-}
-
-@keyframes wave-0 {
-  0% {
-    width: 0%;
-    height: 0%;
-    box-shadow: 0 0 100px inset #8585853f;
-  }
-  50% {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-  }
-  100% {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-  }
-}
-
-@keyframes wave-1 {
-  0% {
-    width: 0%;
-    height: 0%;
-    box-shadow: 0 0 100px inset #8585853f;
-  }
-  50% {
-    width: 75%;
-    height: 75%;
-    opacity: 0;
-  }
-  100% {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-  }
-}
-
-@keyframes wave-2 {
-  0% {
-    width: 0%;
-    height: 0%;
-    box-shadow: 0 0 100px inset #8585853f;
-  }
-  50% {
-    width: 50%;
-    height: 50%;
-    opacity: 0;
-  }
-  100% {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-  }
 }
