@@ -1,13 +1,12 @@
 import * as React from "react";
 import "./App.css";
 import Top from "./components/pages/top";
+import Profile from "./components/pages/profile";
 import {
   Route,
   // Link,
   HashRouter as Router
 } from "react-router-dom";
-
-export const test: any = "test";
 
 class App extends React.Component {
   public render() {
@@ -17,6 +16,7 @@ class App extends React.Component {
           <div className="wrap">
             <div className="App-content">
               <Route exact={true} path="/" component={Top} />
+              <Route path="/profile" component={Profile} />
             </div>
             <div className="App-footer" />
             <div className="App-side" />
