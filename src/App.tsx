@@ -3,6 +3,7 @@ import "./App.css";
 import Top from "./components/pages/top";
 import Profile from "./components/pages/profile";
 import SideBar from "./components/organisms/side-bar";
+import Footer from "./components/organisms/footer";
 import {
   Route,
   // Link,
@@ -21,7 +22,7 @@ class App extends React.Component {
               <Route exact={true} path="/" component={Top} />
               <Route path="/profile" component={Profile} />
             </div>
-            <div className="App-footer" />
+            <Footer />
             <SideBar />
           </div>
         </div>

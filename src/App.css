@@ -4,12 +4,10 @@
   text-align: center;
   background-color: #474747;
   color: #fff;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .App-content {
   height: 90vh;
-  padding-left: 10vw;
   background: -moz-linear-gradient(-150deg, #001729, #050505 60%);
   background: -webkit-linear-gradient(-150deg, #001729, #050505 60%);
   background: linear-gradient(-150deg, #001729, #050505 60%);
@@ -18,8 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fall-0 2s;
-}
+  animation: fall-0 2s; }
 
 .App-content::after {
   content: "";
@@ -30,138 +27,19 @@
   border-top: 60px solid transparent;
   border-left: 50vw solid transparent;
   border-right: 50vw solid #474747;
-  border-bottom: 60px solid #474747;
-}
+  border-bottom: 60px solid #474747; }
 
 @keyframes fall-0 {
   0% {
     top: -100vh;
-    left: 0;
-  }
+    left: 0; }
   50% {
     top: 0;
-    left: 0;
-  }
-}
+    left: 0; } }
 
 @media only screen and (max-width: 2000px) {
   .App-content::after {
     border-left: 1000px solid transparent;
     /* 実数で幅を指定 */
     border-right: 1000px solid #474747;
-    /* 実数で幅を指定 */
-  }
-}
-
-.App-footer {
-  width: 120%;
-  height: 300px;
-  background-color: #474747;
-  /* むらさき */
-  transform-origin: left bottom;
-  transform: rotate(-5deg);
-}
-
-.App-side {
-  position: relative;
-  top: -130vh;
-  left: -48vw;
-  height: 200vh;
-  width: 50vw;
-  background-color: rgba(51, 51, 51, 0.664);
-  transform-origin: left top;
-  transform: rotate(-5deg);
-  animation: side-0 2s;
-}
-
-@keyframes side-0 {
-  0% {
-    left: -100vw;
-  }
-  25% {
-    left: -100vw;
-  }
-  50% {
-    left: -48vw;
-  }
-}
-
-.App-back {
-  animation: fadeIn-0 4s ease 0s 1 normal;
-  -webkit-animation: fadeIn-0 4s ease 0s 1 normal;
-}
-
-.App-title {
-  animation: fadeIn-1 3s ease 0s 1 normal;
-  -webkit-animation: fadeIn-1 3s ease 0s 1 normal;
-}
-
-@keyframes fadeIn-0 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn-1 {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.App-title-first {
-  font-size: 80px;
-  font-weight: 800;
-  position: absolute;
-  top: 22vh;
-  left: 32vw;
-}
-
-.App-title-second {
-  font-size: 80px;
-  font-weight: 800;
-  position: absolute;
-  top: 36vh;
-  left: 48vw;
-}
-
-@media only screen and (max-width: 780px) {
-  .App-title-first {
-    font-size: 48px;
-    top: 28vh;
-    left: 24vw;
-  }
-  .App-title-second {
-    font-size: 48px;
-    top: 36vh;
-    left: 40vw;
-  }
-  .App-side {
-    top: -150vh;
-  }
-}
-
-.App-intro {
-  font-size: large;
-}
-
-.box {
-  width: 8vw;
-  height: 8vw;
-  left: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+    /* 実数で幅を指定 */ } }
