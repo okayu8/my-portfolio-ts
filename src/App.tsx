@@ -2,6 +2,7 @@ import * as React from "react";
 import "./App.css";
 import Top from "./components/pages/top";
 import Profile from "./components/pages/profile";
+import SideBar from "./components/organisms/side-bar";
 import {
   Route,
   // Link,
@@ -10,6 +11,8 @@ import {
 
 class App extends React.Component {
   public render() {
+    // const [click, clickSideBar] = React.useState(false);
+
     return (
       <Router>
         <div className="App">
@@ -19,7 +22,7 @@ class App extends React.Component {
               <Route path="/profile" component={Profile} />
             </div>
             <div className="App-footer" />
-            <div className="App-side" />
+            <SideBar />
           </div>
         </div>
       </Router>
