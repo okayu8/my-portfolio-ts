@@ -1,8 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
+import SideBarLink from "../../atoms/side-bar-link";
 
 const SideBar = () => {
-  return <StyledSideBar />;
+  return (
+    <StyledSideBar>
+      <SideBarLink name={"Top"} uri={"/#/"} />
+      <SideBarLink name={"Profile"} uri={"/#/profile"} />
+    </StyledSideBar>
+  );
 };
 
 const StyledSideBar = styled.div`
@@ -11,7 +17,10 @@ const StyledSideBar = styled.div`
   left: -48vw;
   height: 200vh;
   width: 50vw;
+  padding-top: 20vh;
   background-color: rgba(51, 51, 51, 0.664);
+  display: flex;
+  flex-direction: column;
   transform-origin: left top;
   transform: rotate(-5deg);
   animation: side-0 2s;
