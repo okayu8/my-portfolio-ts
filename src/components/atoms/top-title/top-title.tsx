@@ -38,6 +38,11 @@ const StyledLast = styled.span`
   position: absolute;
   top: 22vh;
   left: 32vw;
+  @media only screen and (max-width: 780px) {
+    font-size: 48px;
+    top: 28vh;
+    left: 24vw;
+  }
 `;
 
 const StyledFirst = styled.span`
@@ -46,6 +51,11 @@ const StyledFirst = styled.span`
   position: absolute;
   top: 36vh;
   left: 48vw;
+  @media only screen and (max-width: 780px) {
+    font-size: 48px;
+    top: 36vh;
+    left: 40vw;
+  }
 `;
 
 export default TopTitle;
