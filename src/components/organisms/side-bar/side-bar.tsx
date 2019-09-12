@@ -7,6 +7,8 @@ const SideBar = () => {
     <StyledSideBar>
       <SideBarLink name={"Top"} uri={"/#/"} />
       <SideBarLink name={"Profile"} uri={"/#/profile"} />
+      <SideBarLink name={"Skills"} uri={"/#/skills"} />
+      <SideBarLink name={"Work"} uri={"/#/work"} />
     </StyledSideBar>
   );
 };
@@ -17,7 +19,7 @@ const StyledSideBar = styled.div`
   left: -48vw;
   height: 200vh;
   width: 50vw;
-  padding-top: 20vh;
+  padding-top: 32vh;
   background-color: rgba(51, 51, 51, 0.664);
   display: flex;
   flex-direction: column;
