@@ -12,10 +12,15 @@ const SideBarLink = (props: IProps) => {
 };
 
 const StyledLink = styled.a`
+  width: 300px;
+  margin: 16px;
+  background-color: #5c000077;
   color: #fff;
   font-size: 24px;
   text-decoration: none;
-  margin: 16px;
+  @media only screen and (max-width: 780px) {
+    width: 180px;
+  }
 `;
 
 export default SideBarLink;
