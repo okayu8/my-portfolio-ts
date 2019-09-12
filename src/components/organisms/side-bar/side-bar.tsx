@@ -5,17 +5,17 @@ import SideBarLink from "../../atoms/side-bar-link";
 const SideBar = () => {
   return (
     <StyledSideBar>
-      <SideBarLink name={"Top"} uri={"/#/"} />
-      <SideBarLink name={"Profile"} uri={"/#/profile"} />
-      <SideBarLink name={"Skills"} uri={"/#/skills"} />
-      <SideBarLink name={"Work"} uri={"/#/work"} />
+      <SideBarLink name={"Top"} to={"/"} />
+      <SideBarLink name={"Profile"} to={"/profile"} />
+      <SideBarLink name={"Skills"} to={"/skills"} />
+      <SideBarLink name={"Work"} to={"/work"} />
     </StyledSideBar>
   );
 };
 
 const StyledSideBar = styled.div`
   position: relative;
-  top: -130vh;
+  top: -150vh;
   left: -48vw;
   height: 200vh;
   width: 50vw;
