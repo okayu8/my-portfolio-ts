@@ -6,13 +6,14 @@ import { Link } from "react-router-dom";
 interface IProps {
   name?: string;
   to?: any;
+  className?: string;
 }
 
 const Button = (props: IProps) => {
-  const { name, to } = props;
+  const { name, to, className } = props;
   return (
     <ApearDelay>
-      <StyledButton>
+      <StyledButton className={className}>
         <StyledLink to={to}>{name}</StyledLink>
       </StyledButton>
     </ApearDelay>
