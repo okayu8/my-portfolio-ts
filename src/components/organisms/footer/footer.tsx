@@ -5,8 +5,8 @@ import Button from "../../atoms/button";
 const Footer = () => {
   return (
     <StyledFooter>
-      <Button to={""} name={"GitHub"} />
-      <Button to={""} name={"Email"} />
+      <StyledButton to={""} name={"GitHub"} />
+      <StyledButton to={""} name={"Email"} />
     </StyledFooter>
   );
 };
@@ -20,6 +20,13 @@ const StyledFooter = styled.div`
   transform-origin: left bottom;
   transform: rotate(-5deg);
   display: flex;
+  @media only screen and (max-width: 780px) {
+    padding-left: 60%;
+  }
+`;
+
+const StyledButton = styled(Button)`
+  margin-left: 16px;
 `;
 
 export default Footer;
