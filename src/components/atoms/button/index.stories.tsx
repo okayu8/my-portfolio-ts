@@ -8,4 +8,4 @@ const components = storiesOf("Button", module);
 components
   .addDecorator(withKnobs)
   .addDecorator(withInfo({ inline: true }))
-  .add("default", () => <Button name="Button" to="/" />);
+  .add("default", () => <Button name="Button" href="/" />);

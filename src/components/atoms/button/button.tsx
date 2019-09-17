@@ -1,20 +1,22 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 // import const from "src/const";
 
 interface IProps {
   name?: string;
-  to?: any;
+  href?: string;
+  target?: string;
   className?: string;
 }
 
 const Button = (props: IProps) => {
-  const { name, to, className } = props;
+  const { name, className, href, target } = props;
   return (
     <ApearDelay>
       <StyledButton className={className}>
-        <StyledLink to={to}>{name}</StyledLink>
+        <StyledLink href={href} target={target}>
+          {name}
+        </StyledLink>
       </StyledButton>
     </ApearDelay>
   );
@@ -35,7 +37,7 @@ const StyledButton = styled.button`
   background-color: #bbbbbb1f;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   font-size: 14px;
   color: #fff;
   text-decoration: none;

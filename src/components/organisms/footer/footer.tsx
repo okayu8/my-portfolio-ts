@@ -5,8 +5,12 @@ import Button from "../../atoms/button";
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledButton to={""} name={"GitHub"} />
-      <StyledButton to={""} name={"Email"} />
+      <StyledButton
+        href="https://github.com/okayu8"
+        target="_blank"
+        name="GitHub"
+      />
+      <StyledButton href="" name="Email" />
     </StyledFooter>
   );
 };
