@@ -1,4 +1,5 @@
 import * as React from "react";
+import styled from "styled-components";
 import "./App.css";
 import Top from "./components/pages/top";
 import Profile from "./components/pages/profile";
@@ -19,8 +20,10 @@ class App extends React.Component {
         <div className="App">
           <div className="wrap">
             <div className="App-content">
-              <Route exact={true} path="/" component={Top} />
-              <Route path="/profile" component={Profile} />
+              <StyledContent>
+                <Route exact={true} path="/" component={Top} />
+                <Route path="/profile" component={Profile} />
+              </StyledContent>
             </div>
             <Footer />
             <SideBar />
@@ -30,5 +33,10 @@ class App extends React.Component {
     );
   }
 }
+
+const StyledContent = styled.div`
+  margin-left: 10vw;
+  width: 80%;
+`;
 
 export default App;
