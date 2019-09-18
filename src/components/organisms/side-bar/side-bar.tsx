@@ -5,19 +5,21 @@ import SideBarLink from "../../atoms/side-bar-link";
 const SideBar = () => {
   return (
     <StyledSideBar>
-      <SideBarLink name={"Top"} uri={"/#/"} />
-      <SideBarLink name={"Profile"} uri={"/#/profile"} />
+      <SideBarLink name={"Top"} to={"/"} />
+      <SideBarLink name={"Profile"} to={"/profile"} />
+      <SideBarLink name={"Skills"} to={"/skills"} />
+      <SideBarLink name={"Work"} to={"/work"} />
     </StyledSideBar>
   );
 };
 
 const StyledSideBar = styled.div`
   position: relative;
-  top: -130vh;
+  top: -150vh;
   left: -48vw;
   height: 200vh;
   width: 50vw;
-  padding-top: 20vh;
+  padding-top: 32vh;
   background-color: rgba(51, 51, 51, 0.664);
   display: flex;
   flex-direction: column;
