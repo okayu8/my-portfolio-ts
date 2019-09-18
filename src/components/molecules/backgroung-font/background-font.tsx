@@ -71,7 +71,7 @@ const StyledLastName = styled.span`
   font-weight: 800;
   position: absolute;
   top: -55vh;
-  left: -40vw;
+  left: 0vw;
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
@@ -89,7 +89,7 @@ const StyledFirstName = styled.span`
   font-weight: 800;
   position: absolute;
   top: -30vh;
-  left: -35vw;
+  left: 5vw;
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
