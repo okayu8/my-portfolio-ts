@@ -4,13 +4,22 @@ import styled from "styled-components";
 
 interface IProps {
   name?: string;
-  onclick?: any;
-  type: string;
+  href?: string;
+  target?: string;
+  className?: string;
 }
 
 const Button = (props: IProps) => {
-  const { name, onclick } = props;
-  return <StyledButton onClick={onclick}>{name}</StyledButton>;
+  const { name, className, href, target } = props;
+  return (
+    <ApearDelay>
+      <StyledButton className={className}>
+        <StyledLink href={href} target={target}>
+          {name}
+        </StyledLink>
+      </StyledButton>
+    </ApearDelay>
+  );
 };
 
 // interface StyledButtonProps {
@@ -23,11 +32,31 @@ const Button = (props: IProps) => {
 // `;
 const StyledButton = styled.button`
   padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.493);
+  border-radius: 4px;
+  background-color: #bbbbbb1f;
+`;
+
+const StyledLink = styled.a`
   font-size: 14px;
   color: #fff;
-  background-color: #bbbbbb1f;
-  border: 1px solid #fff;
-  border-radius: 4px;
+  text-decoration: none;
+`;
+
+const ApearDelay = styled.div`
+  animation: fadeIn-1 3s ease 0s 1 normal;
+  -webkit-animation: fadeIn-1 3s ease 0s 1 normal;
+  @keyframes fadeIn-1 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export default Button;

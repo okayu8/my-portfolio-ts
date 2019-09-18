@@ -8,4 +8,4 @@ const components = storiesOf("SideBarLink", module);
 components
   .addDecorator(withKnobs)
   .addDecorator(withInfo({ inline: true }))
-  .add("default", () => <SideBarLink name={"test"} uri={"/"} />);
+  .add("default", () => <SideBarLink name={"test"} to={"/"} />);
