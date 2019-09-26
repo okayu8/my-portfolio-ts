@@ -2,9 +2,14 @@ import * as React from "react";
 import styled from "styled-components";
 import Button from "../../atoms/button";
 
-const Footer = () => {
+interface IProps {
+  className?: string;
+}
+
+const Footer = (props: IProps) => {
+  const { className } = props;
   return (
-    <StyledFooter>
+    <StyledFooter className={className}>
       <StyledButton
         href="https://github.com/okayu8"
         target="_blank"

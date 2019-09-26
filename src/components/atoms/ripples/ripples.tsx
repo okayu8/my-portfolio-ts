@@ -6,16 +6,18 @@ interface IProps {
   height?: number;
   vertical: number;
   horizon: number;
+  className?: string;
 }
 
 const Ripples = (props: IProps) => {
-  const { width, height, vertical, horizon } = props;
+  const { width, height, vertical, horizon, className } = props;
   return (
     <StyledBox
       width={width}
       height={height}
       vertical={vertical}
       horizon={horizon}
+      className={className}
     >
       <StyledCircle1 />
       <StyledCircle2 />

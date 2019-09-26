@@ -9,6 +9,7 @@ const Profile = () => {
     <StyledProfile>
       <StyledName>{data.name}</StyledName>
       <P>{data.text}</P>
+      <StyledContact />
     </StyledProfile>
   );
 };
@@ -25,5 +26,7 @@ const StyledName = styled.p`
 const P = styled.p`
   overflow-wrap: break-word;
 `;
+
+const StyledContact = styled.div``;
 
 export default Profile;

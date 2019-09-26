@@ -2,9 +2,14 @@ import * as React from "react";
 import styled from "styled-components";
 import SideBarLink from "../../atoms/side-bar-link";
 
-const SideBar = () => {
+interface IProps {
+  className?: string;
+}
+
+const SideBar = (props: IProps) => {
+  const { className } = props;
   return (
-    <StyledSideBar>
+    <StyledSideBar className={className}>
       <SideBarLink name={"Top"} to={"/"} />
       <SideBarLink name={"Profile"} to={"/profile"} />
       <SideBarLink name={"Skills"} to={"/skills"} />

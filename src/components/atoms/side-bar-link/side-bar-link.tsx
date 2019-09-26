@@ -3,13 +3,18 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 interface IProps {
+  className?: string;
   name: string;
   to?: any;
 }
 
 const SideBarLink = (props: IProps) => {
-  const { name, to } = props;
-  return <StyledLink to={to}>{name}</StyledLink>;
+  const { name, to, className } = props;
+  return (
+    <StyledLink to={to} className={className}>
+      {name}
+    </StyledLink>
+  );
 };
 
 const StyledLink = styled(Link)`
