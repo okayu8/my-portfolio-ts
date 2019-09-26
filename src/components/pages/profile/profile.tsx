@@ -9,7 +9,7 @@ const Profile = () => {
     <StyledProfile>
       <StyledName>{data.name}</StyledName>
       <P>{data.text}</P>
-      <StyledContact></StyledContact>
+      <StyledContact />
     </StyledProfile>
   );
 };

@@ -5,6 +5,7 @@ import { useSpring, animated } from "react-spring";
 interface IProps {
   firstName: string;
   lastName: string;
+  className?: string;
 }
 
 const calc = (x: number, y: number) => [
@@ -18,7 +19,7 @@ const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 4}px,${y / 5}px,0)`;
 
 const BackgroundFont = (props: IProps) => {
-  const { firstName, lastName } = props;
+  const { firstName, lastName, className } = props;
   const [prlxProps, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 }
@@ -29,6 +30,7 @@ const BackgroundFont = (props: IProps) => {
       onMouseMove={({ clientX: x, clientY: y }) => {
         set({ xy: calc(x, y) });
       }}
+      className={className}
     >
       <animated.div
         id="back-0"

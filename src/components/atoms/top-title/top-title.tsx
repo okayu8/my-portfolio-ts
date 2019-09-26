@@ -4,12 +4,13 @@ import styled from "styled-components";
 interface IProps {
   firstName: string;
   lastName: string;
+  className?: string;
 }
 
 const TopTitle = (props: IProps) => {
-  const { firstName, lastName } = props;
+  const { firstName, lastName, className } = props;
   return (
-    <StyledTitle>
+    <StyledTitle className={className}>
       <StyledLast>{lastName}</StyledLast>
       <StyledFirst>{firstName}</StyledFirst>
     </StyledTitle>
