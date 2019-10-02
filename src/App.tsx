@@ -35,7 +35,7 @@ class App extends React.Component {
 }
 
 const StyledContent = styled.div`
-  margin-left: 10vw;
+  margin-left: 15vw;
   width: 80%;
 `;
 

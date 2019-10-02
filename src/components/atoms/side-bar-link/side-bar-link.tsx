@@ -18,9 +18,10 @@ const SideBarLink = (props: IProps) => {
 };
 
 const StyledLink = styled(Link)`
+  position: relative
   width: 300px;
   margin: 16px;
-  background-color: #5c000077;
+  /* background-color: #5c000077; */
   color: #fff;
   font-size: 24px;
   text-decoration: none;
