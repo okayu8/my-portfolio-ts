@@ -72,8 +72,8 @@ const StyledLastName = styled.span`
   color: rgba(221, 221, 221, 0.08);
   font-weight: 800;
   position: absolute;
-  top: -55vh;
-  left: 0vw;
+  top: -50vh;
+  left: -5vw;
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
@@ -81,7 +81,7 @@ const StyledLastName = styled.span`
     font-weight: 800;
     position: absolute;
     top: -40vh;
-    left: -40vw;
+    left: 0;
   }
 `;
 
@@ -90,8 +90,8 @@ const StyledFirstName = styled.span`
   color: rgba(221, 221, 221, 0.24);
   font-weight: 800;
   position: absolute;
-  top: -30vh;
-  left: 5vw;
+  top: -25vh;
+  left: 0vw;
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
@@ -99,7 +99,7 @@ const StyledFirstName = styled.span`
     font-weight: 800;
     position: absolute;
     top: -25vh;
-    left: -35vw;
+    left: 10vw;
   }
 `;
 
