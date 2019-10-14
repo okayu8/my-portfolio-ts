@@ -20,12 +20,12 @@ const JobFont = (props: IProps) => {
   );
 };
 
-interface StyledProps {
+interface IStyledProps {
   top: number;
   left: number;
 }
 
-const StyledJobFont = styled.p<StyledProps>`
+const StyledJobFont = styled.p<IStyledProps>`
   position: relative;
   color: #000;
   top: ${props => props.top}px;

@@ -11,12 +11,17 @@ interface IProps {
 const SideBarLink = (props: IProps) => {
   const { name, to, className } = props;
   return (
-    <StyledLink to={to} className={className}>
-      {name}
-    </StyledLink>
+    <DIV>
+      <StyledLink to={to} className={className}>
+        {name}
+      </StyledLink>
+    </DIV>
   );
 };
 
+const DIV = styled.div`
+  margin: 16px;
+`;
 const StyledLink = styled(Link)`
   position: relative
   width: 300px;
