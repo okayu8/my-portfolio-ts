@@ -70,7 +70,7 @@ const StyledBack = styled.div`
 const StyledLastName = styled.span`
   font-family: Arial;
   font-size: 400px;
-  color: rgba(221, 221, 221, 0.02);
+  color: rgba(221, 221, 221, 0.04);
   font-weight: 800;
   position: absolute;
   top: -40vh;
@@ -78,7 +78,7 @@ const StyledLastName = styled.span`
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
-    color: rgba(221, 221, 221, 0.02);
+    color: rgba(221, 221, 221, 0.08);
     font-weight: 800;
     position: absolute;
     top: -28vh;
@@ -89,7 +89,7 @@ const StyledLastName = styled.span`
 const StyledFirstName = styled.span`
   font-family: Arial;
   font-size: 400px;
-  color: rgba(221, 221, 221, 0.06);
+  color: rgba(221, 221, 221, 0.1);
   font-weight: 800;
   position: absolute;
   top: -18vh;
@@ -97,7 +97,7 @@ const StyledFirstName = styled.span`
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
-    color: rgba(221, 221, 221, 0.06);
+    color: rgba(221, 221, 221, 0.14);
     font-weight: 800;
     position: absolute;
     top: -12vh;
