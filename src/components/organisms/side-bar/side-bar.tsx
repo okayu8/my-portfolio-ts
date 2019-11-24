@@ -24,7 +24,7 @@ const StyledSideBar = styled.div`
   left: -48vw;
   height: 200vh;
   width: 50vw;
-  padding-top: 32vh;
+  padding-top: 56vh;
   background-color: rgba(51, 51, 51, 0.664);
   display: flex;
   flex-direction: column;
@@ -32,6 +32,7 @@ const StyledSideBar = styled.div`
   transform: rotate(-5deg);
   animation: side-0 2s;
   transition: 1s;
+  z-index: 1;
 
   @keyframes side-0 {
     0% {
@@ -46,13 +47,14 @@ const StyledSideBar = styled.div`
   }
 
   :hover {
-    left: -8vw;
+    left: -24vw;
   }
 
   @media only screen and (max-width: 780px) {
     top: -150vh;
     left: -80vw;
     width: 80vw;
+    padding-top: 32vh;
     animation: side-1 2s;
     transition: 1s;
 

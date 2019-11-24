@@ -68,37 +68,39 @@ const StyledBack = styled.div`
 `;
 
 const StyledLastName = styled.span`
+  font-family: Arial;
   font-size: 400px;
-  color: rgba(221, 221, 221, 0.08);
+  color: rgba(221, 221, 221, 0.02);
   font-weight: 800;
   position: absolute;
-  top: -50vh;
+  top: -40vh;
   left: -5vw;
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
-    color: rgba(221, 221, 221, 0.08);
+    color: rgba(221, 221, 221, 0.02);
     font-weight: 800;
     position: absolute;
-    top: -40vh;
+    top: -28vh;
     left: 0;
   }
 `;
 
 const StyledFirstName = styled.span`
+  font-family: Arial;
   font-size: 400px;
-  color: rgba(221, 221, 221, 0.24);
+  color: rgba(221, 221, 221, 0.06);
   font-weight: 800;
   position: absolute;
-  top: -25vh;
+  top: -18vh;
   left: 0vw;
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
-    color: rgba(221, 221, 221, 0.24);
+    color: rgba(221, 221, 221, 0.06);
     font-weight: 800;
     position: absolute;
-    top: -25vh;
+    top: -12vh;
     left: 10vw;
   }
 `;

@@ -24,6 +24,7 @@ const DIV = styled.div`
 `;
 const StyledLink = styled(Link)`
   position: relative
+  right: -10vw;
   width: 300px;
   margin: 16px;
   /* background-color: #5c000077; */
