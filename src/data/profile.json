@@ -1,6 +1,6 @@
 {
   "name": "片岡 祐太郎 (カタオカ ユウタロウ)",
-  "text": "1990年生まれ。北海道出身のWEBエンジニアです。",
+  "text": "1990年生まれ。北海道出身のWEBエンジニアです。\n\nフロントエンド開発が主ですが、サーバーサイドやブロックチェーンの開発、CMSのカスタマイズ等の仕事もします。\n現在は React + TypeScript 環境でのフロントエンド構築にハマっています。\n今興味のある技術は Next.js, Gatsby, WebGLです。 \n\n趣味は美味いカレーとラーメンを探すことです。",
   "contact": {
     "email": "atmic-style@gmail.com",
     "github": "https://github.com/okayu8",

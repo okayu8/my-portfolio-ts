@@ -31,7 +31,7 @@ const StyledTooltip = styled.div`
   &:after,
   &:before {
     bottom: 100%;
-    left: 50%;
+    left: 30%;
     border: solid transparent;
     content: " ";
     height: 0;
