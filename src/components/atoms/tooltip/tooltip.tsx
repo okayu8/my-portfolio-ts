@@ -8,9 +8,53 @@ interface IProps {
 
 const Tooltip = (props: IProps) => {
   const { className, value } = props;
-  return <StyledTooltip className={className}>{value}</StyledTooltip>;
+  return (
+    <StyledTooltip className={className}>
+      <SPAN>{value}</SPAN>
+    </StyledTooltip>
+  );
 };
 
-const StyledTooltip = styled.div``;
+const StyledTooltip = styled.div`
+  position: absolute;
+  top: 52vh;
+  left: 52vw;
+  padding: 16px;
+  font-size: 24px;
+  background-color: #001729;
+  border: solid 4px #fff;
+  border-color: rgba(150, 150, 150);
+  border-radius: 8px;
+  &:after,
+  &:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after {
+    border-bottom-color: #001729;
+    border-width: 20px;
+    margin-left: -20px;
+  }
+  &:before {
+    border-bottom-color: rgba(150, 150, 150);
+    border-width: 26px;
+    margin-left: -26px;
+  }
+  @media only screen and (max-width: 780px) {
+    left: 38vw;
+    font-size: 16px;
+  }
+`;
+
+const SPAN = styled.span`
+  font-family: Arial;
+  color: #0195b9;
+`;
 
 export default Tooltip;

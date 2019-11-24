@@ -34,11 +34,12 @@ const StyledTitle = styled.div`
 `;
 
 const StyledLast = styled.span`
+  font-family: Arial;
   font-size: 80px;
   font-weight: 800;
   position: absolute;
-  top: 22vh;
-  left: 32vw;
+  top: 30vh;
+  left: 38vw;
   @media only screen and (max-width: 780px) {
     font-size: 48px;
     top: 28vh;
@@ -47,11 +48,12 @@ const StyledLast = styled.span`
 `;
 
 const StyledFirst = styled.span`
+  font-family: Arial;
   font-size: 80px;
   font-weight: 800;
   position: absolute;
-  top: 36vh;
-  left: 48vw;
+  top: 38vh;
+  left: 50vw;
   @media only screen and (max-width: 780px) {
     font-size: 48px;
     top: 36vh;
