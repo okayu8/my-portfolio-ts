@@ -6,6 +6,7 @@ import Top from "./components/pages/top";
 import Profile from "./components/pages/profile";
 import SideBar from "./components/organisms/side-bar";
 import Footer from "./components/organisms/footer";
+import Ripples from "./components/atoms/ripples";
 import {
   Route,
   // Link,
@@ -29,6 +30,12 @@ class App extends React.Component {
             </div>
             <Footer />
             <SideBar />
+            <Ripples
+              width={840}
+              height={840}
+              vertical_top={-420}
+              horizon_right={-420}
+            />
           </div>
         </div>
       </Router>
@@ -50,6 +57,7 @@ const IMG = styled.img`
 const StyledContent = styled.div`
   margin-left: 15vw;
   width: 80%;
+  z-index: 1;
 `;
 
 export default App;

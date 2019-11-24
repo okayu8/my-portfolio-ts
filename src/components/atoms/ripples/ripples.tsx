@@ -4,19 +4,31 @@ import styled from "styled-components";
 interface IProps {
   width?: number;
   height?: number;
-  vertical: number;
-  horizon: number;
+  vertical_top?: number;
+  vertical_bottom?: number;
+  horizon_right?: number;
+  horizon_left?: number;
   className?: string;
 }
 
 const Ripples = (props: IProps) => {
-  const { width, height, vertical, horizon, className } = props;
+  const {
+    width,
+    height,
+    vertical_top,
+    vertical_bottom,
+    horizon_right,
+    horizon_left,
+    className
+  } = props;
   return (
     <StyledBox
       width={width}
       height={height}
-      vertical={vertical}
-      horizon={horizon}
+      vertical_top={vertical_top}
+      vertical_bottom={vertical_bottom}
+      horizon_right={horizon_right}
+      horizon_left={horizon_left}
       className={className}
     >
       <StyledCircle1 />
@@ -29,19 +41,23 @@ const Ripples = (props: IProps) => {
 interface IStyleProps {
   width?: number;
   height?: number;
-  vertical: number;
-  horizon: number;
+  vertical_top?: number;
+  vertical_bottom?: number;
+  horizon_right?: number;
+  horizon_left?: number;
 }
 
 const StyledBox = styled.div<IStyleProps>`
-  width: ${props => props.width || 8}vw;
-  height: ${props => props.height || 8}vw;
+  width: ${props => props.width || 8}px;
+  height: ${props => props.height || 8}px;
   display: flex;
-  top: ${props => props.vertical}px
-  left: ${props => props.horizon}px;
+  top: ${props => props.vertical_top}px;
+  bottom: ${props => props.vertical_bottom}px;
+  right: ${props => props.horizon_right}px;
+  left: ${props => props.horizon_left}px;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
 `;
 
 const StyledCircle1 = styled.div`

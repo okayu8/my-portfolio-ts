@@ -8,4 +8,4 @@ const components = storiesOf("Ripples", module);
 components
   .addDecorator(withKnobs)
   .addDecorator(withInfo({ inline: true }))
-  .add("default", () => <Ripples vertical={8} horizon={3} />);
+  .add("default", () => <Ripples vertical_top={8} horizon_left={3} />);

@@ -32,6 +32,7 @@ const StyledSideBar = styled.div`
   transform: rotate(-5deg);
   animation: side-0 2s;
   transition: 1s;
+  z-index: 1;
 
   @keyframes side-0 {
     0% {
