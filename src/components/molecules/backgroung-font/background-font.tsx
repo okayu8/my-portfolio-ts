@@ -70,7 +70,7 @@ const StyledBack = styled.div`
 const StyledLastName = styled.span`
   font-family: Arial;
   font-size: 400px;
-  color: rgba(221, 221, 221, 0.04);
+  color: rgba(221, 221, 221, 0.02);
   font-weight: 800;
   position: absolute;
   top: -40vh;
@@ -78,7 +78,7 @@ const StyledLastName = styled.span`
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
-    color: rgba(221, 221, 221, 0.08);
+    color: rgba(221, 221, 221, 0.04);
     font-weight: 800;
     position: absolute;
     top: -28vh;
