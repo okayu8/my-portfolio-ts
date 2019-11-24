@@ -25,6 +25,9 @@ const StyledTooltip = styled.div`
   border: solid 4px #fff;
   border-color: rgba(150, 150, 150);
   border-radius: 8px;
+  animation: fadeIn-0 5s ease 0s 1 normal;
+  -webkit-animation: fadeIn-0 5s ease 0s 1 normal;
+
   &:after,
   &:before {
     bottom: 100%;
@@ -36,16 +39,31 @@ const StyledTooltip = styled.div`
     position: absolute;
     pointer-events: none;
   }
+
   &:after {
     border-bottom-color: #001729;
     border-width: 20px;
     margin-left: -20px;
   }
+
   &:before {
     border-bottom-color: rgba(150, 150, 150);
     border-width: 26px;
     margin-left: -26px;
   }
+
+  @keyframes fadeIn-0 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   @media only screen and (max-width: 780px) {
     left: 38vw;
     font-size: 16px;

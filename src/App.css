@@ -5,6 +5,7 @@
   background-color: #474747;
   color: #fff;
   overflow: hidden;
+  position: relative;
 }
 
 .App-content {
