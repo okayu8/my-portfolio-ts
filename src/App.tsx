@@ -30,12 +30,20 @@ class App extends React.Component {
             </div>
             <Footer />
             <SideBar />
-            <Ripples
-              width={840}
-              height={840}
-              vertical_top={-420}
-              horizon_right={-420}
-            />
+            <RippeleWrapper>
+              <Ripples
+                width={840}
+                height={840}
+                vertical_top={-430}
+                horizon_right={-430}
+              />
+              <Ripples
+                width={840}
+                height={840}
+                vertical_top={-430}
+                horizon_left={-430}
+              />
+            </RippeleWrapper>
           </div>
         </div>
       </Router>
@@ -58,6 +66,23 @@ const StyledContent = styled.div`
   margin-left: 15vw;
   width: 80%;
   z-index: 1;
+`;
+
+const RippeleWrapper = styled.div`
+  animation: fadeIn-0 5s ease 0s 1 normal;
+  -webkit-animation: fadeIn-0 4s ease 0s 1 normal;
+  z-index: 0;
+  @keyframes fadeIn-0 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export default App;

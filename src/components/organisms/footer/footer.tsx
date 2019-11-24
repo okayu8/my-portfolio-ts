@@ -31,6 +31,7 @@ const StyledFooter = styled.div`
   background-color: #474747;
   transform-origin: left bottom;
   transform: rotate(-5deg);
+  z-index: 1;
 `;
 
 const ButtonArea = styled.div`
