@@ -71,7 +71,6 @@ const IMG = styled.img`
 
   @media only screen and (max-width: 780px) {
     width: 100px;
-    top: 64px;
   }
 `;
 
