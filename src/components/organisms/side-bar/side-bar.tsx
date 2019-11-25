@@ -54,7 +54,7 @@ const StyledSideBar = styled.div`
     top: -150vh;
     left: -80vw;
     width: 80vw;
-    padding-top: 32vh;
+    padding-top: 48vh;
     animation: side-1 2s;
     transition: 1s;
 

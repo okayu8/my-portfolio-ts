@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import "./App.css";
-import logoImg from "./images/atomicstyle_logo_comic.png";
+import LogoImg from "./images/atomicstyle_logo_comic.png";
 import Top from "./components/pages/top";
 import Profile from "./components/pages/profile";
 import SideBar from "./components/organisms/side-bar";
@@ -22,7 +22,7 @@ class App extends React.Component {
         <div className="App">
           <div className="wrap">
             <div className="App-content">
-              <IMG src={logoImg} />
+              <IMG src={LogoImg} />
               <StyledContent>
                 <Route exact={true} path="/" component={Top} />
                 <Route path="/profile" component={Profile} />
@@ -59,6 +59,7 @@ const IMG = styled.img`
 
   @media only screen and (max-width: 780px) {
     width: 100px;
+    top: 64px;
   }
 `;
 
