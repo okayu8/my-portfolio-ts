@@ -1,10 +1,11 @@
 @charset "UTF-8";
 .App {
-  height: 100vh;
   text-align: center;
   background-color: #474747;
   color: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .App-content {
   height: 90vh;
@@ -17,6 +18,10 @@
   justify-content: center;
   align-items: center;
   animation: fall-0 2s; }
+
+@media only screen and (max-width: 780px) {
+  .App-content {
+    height: 80vh; } }
 
 .App-content::after {
   content: "";
