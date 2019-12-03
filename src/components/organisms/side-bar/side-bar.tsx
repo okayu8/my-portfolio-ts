@@ -23,7 +23,7 @@ const SideBar = (props: IProps) => {
 
 interface ITapButtonProps {
   top?: number;
-  light_class?: string;
+  light_class?: | "1" | "2" | "3";
 }
 
 const StyledSideBar = styled.div`
