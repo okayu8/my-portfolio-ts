@@ -17,3 +17,7 @@ TypeScript + React で作成したポートフォリオ
 - jest
 - styled-components
 - react-spring
+
+# デプロイ手順
+- ビルド `yarn build`
+- gh-pagesへデプロイ `yarn deploy`
