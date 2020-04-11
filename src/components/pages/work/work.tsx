@@ -6,15 +6,13 @@ export type Data = typeof data;
 
 const Work = () => {
   return (
-    <StyledProfile style={{ whiteSpace: "pre-line" }}>
-      <StyledName>{data.name}</StyledName>
-      <P>{data.text}</P>
-      <StyledContact />
-    </StyledProfile>
+    <WorkContent style={{ whiteSpace: "pre-line" }}>
+      <h1>Work</h1>
+    </WorkContent>
   );
 };
 
-const StyledProfile = styled.div`
+const WorkContent = styled.div`
   text-align: left;
   animation: fadeIn-1 2s ease 0s 1 normal;
   -webkit-animation: fadeIn-1 2s ease 0s 1 normal;
@@ -27,21 +25,5 @@ const StyledProfile = styled.div`
     }
   }
 `;
-
-const StyledName = styled.p`
-  font-weight: 800;
-  overflow-wrap: break-word;
-  margin-bottom: 32px;
-`;
-
-const P = styled.p`
-  font-size: 16px;
-  overflow-wrap: break-word;
-  @media only screen and (max-width: 780px) {
-    font-size: 12px;
-  }
-`;
-
-const StyledContact = styled.div``;
 
 export default Work;
