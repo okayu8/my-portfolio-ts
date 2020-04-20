@@ -23,7 +23,7 @@ const SideBar = (props: IProps) => {
 
 interface ITapButtonProps {
   top?: number;
-  light_class?: | "1" | "2" | "3";
+  light_class?: "1" | "2" | "3";
 }
 
 const StyledSideBar = styled.div`
@@ -94,46 +94,46 @@ const TapButton = styled.div<ITapButtonProps>`
   border: solid 4px #fff;
   border-radius: 20px;
   opacity: 0.1;
-  animation: light-${props => props.light_class} 5s infinite;
+  animation: light- ${props => props.light_class} 5s infinite;
 
   @keyframes light-1 {
     0% {
-      opacity: 0.1
+      opacity: 0.1;
     }
     32% {
-      opacity: 0.6
+      opacity: 0.6;
     }
     64% {
-      opacity: 0.1
+      opacity: 0.1;
     }
   }
 
   @keyframes light-2 {
     32% {
-      opacity: 0.1
+      opacity: 0.1;
     }
     64% {
-      opacity: 0.6
+      opacity: 0.6;
     }
     100% {
-      opacity: 0.1
+      opacity: 0.1;
     }
   }
 
   @keyframes light-3 {
     0% {
-      opacity:0.6
+      opacity: 0.6;
     }
     32% {
-      opacity: 0.1
+      opacity: 0.1;
     }
     64% {
-      opacity: 0.1
+      opacity: 0.1;
     }
     100% {
-      opacity: 0.6
+      opacity: 0.6;
     }
   }
-`
+`;
 
 export default SideBar;
