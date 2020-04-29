@@ -10,12 +10,9 @@ import Work from "./components/pages/work";
 import SideBar from "./components/organisms/side-bar";
 import Footer from "./components/organisms/footer";
 import Ripples from "./components/atoms/ripples";
-import {
-  Route,
-  // Link,
-  HashRouter as Router,
-} from "react-router-dom";
+import { Route, HashRouter as Router } from "react-router-dom";
 
+/* Sentry */
 Sentry.init({
   dsn: "https://3c8643d566434807a5fc6bc11d715eeb@sentry.io/1848946",
 });
