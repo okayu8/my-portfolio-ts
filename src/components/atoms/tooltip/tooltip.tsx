@@ -10,7 +10,7 @@ const Tooltip = (props: IProps) => {
   const { className, value } = props;
   return (
     <StyledTooltip className={className}>
-      <SPAN>{value}</SPAN>
+      <Span>{value}</Span>
     </StyledTooltip>
   );
 };
@@ -70,7 +70,7 @@ const StyledTooltip = styled.div`
   }
 `;
 
-const SPAN = styled.span`
+const Span = styled.span`
   font-family: Arial;
   color: #0195b9;
 `;
