@@ -6,16 +6,29 @@ export type Data = typeof data;
 
 const Profile = () => {
   return (
-    <StyledProfile style={{ whiteSpace: "pre-line" }}>
+    <ProfileContent style={{ whiteSpace: "pre-line" }}>
+      <h1>Profile</h1>
       <StyledName>{data.name}</StyledName>
       <P>{data.text}</P>
       <StyledContact />
-    </StyledProfile>
+    </ProfileContent>
   );
 };
 
-const StyledProfile = styled.div`
+const ProfileContent = styled.div`
   text-align: left;
+  height: 70vh;
+  overflow-y: scroll;
+  animation: fadeIn-1 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn-1 2s ease 0s 1 normal;
+  @keyframes fadeIn-1 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
 `;
 
 const StyledName = styled.p`

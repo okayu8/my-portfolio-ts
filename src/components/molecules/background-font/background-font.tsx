@@ -10,7 +10,7 @@ interface IProps {
 
 const calc = (x: number, y: number) => [
   x - window.innerWidth / 2,
-  y - window.innerHeight / 2
+  y - window.innerHeight / 2,
 ];
 
 // @ts-ignore
@@ -22,7 +22,7 @@ const BackgroundFont = (props: IProps) => {
   const { firstName, lastName, className } = props;
   const [prlxProps, set] = useSpring(() => ({
     xy: [0, 0],
-    config: { mass: 10, tension: 550, friction: 140 }
+    config: { mass: 10, tension: 550, friction: 140 },
   }));
 
   return (
@@ -70,7 +70,7 @@ const StyledBack = styled.div`
 const StyledLastName = styled.span`
   font-family: Arial;
   font-size: 400px;
-  color: rgba(221, 221, 221, 0.02);
+  color: rgba(221, 221, 221, 0.04);
   font-weight: 800;
   position: absolute;
   top: -40vh;
@@ -78,7 +78,7 @@ const StyledLastName = styled.span`
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
-    color: rgba(221, 221, 221, 0.04);
+    color: rgba(221, 221, 221, 0.06);
     font-weight: 800;
     position: absolute;
     top: -28vh;

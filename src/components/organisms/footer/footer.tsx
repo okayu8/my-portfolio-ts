@@ -18,7 +18,7 @@ const Footer = (props: IProps) => {
         />
         <StyledButton href="" name="Twitter" />
         <StyledButton href="" name="facebook" />
-        <StyledButton href="" name="Email" />
+        <StyledButton href="mailto:kataoka-yutaro@atomicstyle.work" name="Email" />
       </ButtonArea>
     </StyledFooter>
   );

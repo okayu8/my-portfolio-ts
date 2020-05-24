@@ -14,9 +14,17 @@ const SideBar = (props: IProps) => {
       <SideBarLink name={"Profile"} to={"/profile"} />
       <SideBarLink name={"Skills"} to={"/skills"} />
       <SideBarLink name={"Work"} to={"/work"} />
+      <TapButton top={80} light_class={"1"} />
+      <TapButton top={86} light_class={"2"} />
+      <TapButton top={92} light_class={"3"} />
     </StyledSideBar>
   );
 };
+
+interface ITapButtonProps {
+  top?: number;
+  light_class?: "1" | "2" | "3";
+}
 
 const StyledSideBar = styled.div`
   position: relative;
@@ -72,6 +80,58 @@ const StyledSideBar = styled.div`
     }
     50% {
       left: -80vw;
+    }
+  }
+`;
+
+const TapButton = styled.div<ITapButtonProps>`
+  position: absolute;
+  top: ${props => props.top}vh;
+  right: 20px;
+  width: 2px;
+  height: 20px;
+  background-color: #fff;
+  border: solid 4px #fff;
+  border-radius: 20px;
+  opacity: 0.1;
+  animation: light- ${props => props.light_class} 5s infinite;
+
+  @keyframes light-1 {
+    0% {
+      opacity: 0.1;
+    }
+    32% {
+      opacity: 0.6;
+    }
+    64% {
+      opacity: 0.1;
+    }
+  }
+
+  @keyframes light-2 {
+    32% {
+      opacity: 0.1;
+    }
+    64% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+
+  @keyframes light-3 {
+    0% {
+      opacity: 0.6;
+    }
+    32% {
+      opacity: 0.1;
+    }
+    64% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 0.6;
     }
   }
 `;
