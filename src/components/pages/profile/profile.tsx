@@ -17,6 +17,8 @@ const Profile = () => {
 
 const ProfileContent = styled.div`
   text-align: left;
+  height: 70vh;
+  overflow-y: scroll;
   animation: fadeIn-1 2s ease 0s 1 normal;
   -webkit-animation: fadeIn-1 2s ease 0s 1 normal;
   @keyframes fadeIn-1 {
