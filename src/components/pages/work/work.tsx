@@ -1,14 +1,25 @@
 import * as React from "react";
 import styled from "styled-components";
-import data from "data/works.json";
+import worksDto from "data/works.json";
+import WorksPanel from "../../molecules/works-panel";
+console.log(worksDto);
 
-export type Data = typeof data;
+interface WorksData {
+  name: string;
+  tecnology: string;
+  description: string;
+  imgPath: string;
+}
 
 const Work = () => {
   return (
     <WorkContent style={{ whiteSpace: "pre-line" }}>
       <h1>Work</h1>
-      <ContentWrapper>works</ContentWrapper>
+      <ContentWrapper>
+        {worksDto.map((data: WorksData, index: number) => {
+          return <WorksPanel key={index} dto={data} />;
+        })}
+      </ContentWrapper>
     </WorkContent>
   );
 };
@@ -28,4 +39,5 @@ const WorkContent = styled.div`
 `;
 
 const ContentWrapper = styled.div``;
+
 export default Work;

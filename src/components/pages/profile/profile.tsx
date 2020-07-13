@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import data from "data/profile.json";
 
-export type Data = typeof data;
+// export type Data = typeof data;
 
 const Profile = () => {
   return (
