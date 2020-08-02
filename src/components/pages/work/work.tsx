@@ -8,7 +8,7 @@ const Work = () => {
   return (
     <WorkContent style={{ whiteSpace: "pre-line" }}>
       <h1>Work</h1>
-      <ContentWrapper></ContentWrapper>
+      <ContentWrapper>works</ContentWrapper>
     </WorkContent>
   );
 };
