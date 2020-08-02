@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import data from "data/profile.json";
+import data from "data/works.json";
 
 export type Data = typeof data;
 
@@ -8,6 +8,7 @@ const Work = () => {
   return (
     <WorkContent style={{ whiteSpace: "pre-line" }}>
       <h1>Work</h1>
+      <ContentWrapper>works</ContentWrapper>
     </WorkContent>
   );
 };
@@ -26,4 +27,5 @@ const WorkContent = styled.div`
   }
 `;
 
+const ContentWrapper = styled.div``;
 export default Work;
