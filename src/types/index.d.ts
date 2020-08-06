@@ -11,6 +11,6 @@ declare module "*/works.json" {
     imgPath: string;
   }
 
-  const value: WorksData;
+  const value: WorksData[];
   export = value;
 }
