@@ -13,7 +13,7 @@ interface WorksData {
 
 const Work = () => {
   return (
-    <WorkContent style={{ whiteSpace: "pre-line" }}>
+    <WorkContent>
       <h1>Work</h1>
       <ContentWrapper>
         {worksDto.map((data: WorksData, index: number) => {

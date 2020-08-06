@@ -12,6 +12,6 @@
     "imgPath": "test2 imgPath"
   },
   {
-    "name": "test3"
+    "name": [1, 2, 3]
   }
 ]

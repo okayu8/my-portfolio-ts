@@ -3,7 +3,7 @@ declare module "*.jpg";
 declare module "*.gif";
 declare module "*.css";
 
-declare module "*/works.json" {
+declare module "data/works.json" {
   interface WorksData {
     name: string;
     tecnology: string;
@@ -11,6 +11,6 @@ declare module "*/works.json" {
     imgPath: string;
   }
 
-  const value: WorksData[];
-  export = value;
+  const data: WorksData[];
+  export = data;
 }

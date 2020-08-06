@@ -6,7 +6,7 @@ import data from "data/profile.json";
 
 const Profile = () => {
   return (
-    <ProfileContent style={{ whiteSpace: "pre-line" }}>
+    <ProfileContent>
       <h1>Profile</h1>
       <StyledName>{data.name}</StyledName>
       <P>{data.text}</P>
