@@ -2,22 +2,16 @@ import * as React from "react";
 import styled from "styled-components";
 import worksDto from "data/works.json";
 import WorksPanel from "../../molecules/works-panel";
-console.log(worksDto);
 
-interface WorksData {
-  name: string;
-  tecnology: string;
-  description: string;
-  imgPath: string;
-}
+// TODO:JSONの型定義したい
 
 const Work = () => {
   return (
     <WorkContent>
       <h1>Work</h1>
       <ContentWrapper>
-        {worksDto.map((data: WorksData, index: number) => {
-          return <WorksPanel key={index} dto={data} />;
+        {worksDto.map((data, index: number) => {
+          return <WorksPanel key={index} data={data} />;
         })}
       </ContentWrapper>
     </WorkContent>

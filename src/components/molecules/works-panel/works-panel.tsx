@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 
 interface IProps {
-  dto: {
+  data: {
     name: string;
     tecnology: string;
     description: string;
@@ -11,7 +11,7 @@ interface IProps {
 }
 
 const WorksPanel = (props: IProps) => {
-  const { name, tecnology, description, imgPath } = props.dto;
+  const { name, tecnology, description, imgPath } = props.data;
   return (
     <Wrapper>
       <Name>{name}</Name>
