@@ -20,7 +20,12 @@ TypeScript + React で作成したポートフォリオ
 - styled-components
 - react-spring
 
-# デプロイ手順
+## デプロイ手順
 
 - ビルド `yarn build`
 - gh-pages へデプロイ `yarn deploy`
+
+## 改修メモ
+
+- スタイルは基本的に CSS in JS で行う
+- src/App.css は直接触らず、 src/style/App.scss を変更する。
