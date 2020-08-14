@@ -1,14 +1,19 @@
 import * as React from "react";
 import styled from "styled-components";
-import data from "data/works.json";
+import worksDto from "data/works.json";
+import WorksPanel from "../../molecules/works-panel";
 
-export type Data = typeof data;
+// TODO:JSONの型定義したい
 
 const Work = () => {
   return (
-    <WorkContent style={{ whiteSpace: "pre-line" }}>
+    <WorkContent>
       <h1>Work</h1>
-      <ContentWrapper>works</ContentWrapper>
+      <ContentWrapper>
+        {worksDto.map((data, index: number) => {
+          return <WorksPanel key={index} data={data} />;
+        })}
+      </ContentWrapper>
     </WorkContent>
   );
 };
@@ -28,4 +33,5 @@ const WorkContent = styled.div`
 `;
 
 const ContentWrapper = styled.div``;
+
 export default Work;

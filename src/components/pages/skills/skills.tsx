@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Skills = () => {
   return (
-    <SkillsContent style={{ whiteSpace: "pre-line" }}>
+    <SkillsContent>
       <h1>Skills</h1>
     </SkillsContent>
   );
