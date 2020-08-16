@@ -12,9 +12,9 @@ TypeScript + React で作成したポートフォリオ
 
 ## 使用ツール・ライブラリ
 
+- create-react-app
 - redux
 - react-router
-- typescript-fsa
 - storybook
 - jest
 - styled-components
@@ -27,5 +27,5 @@ TypeScript + React で作成したポートフォリオ
 
 ## 改修メモ
 
-- スタイルは基本的に CSS in JS で行う
+- コンポーネントのスタイリングは基本的に CSS in JS で行う
 - src/App.css は直接触らず、 src/style/App.scss を変更する。
