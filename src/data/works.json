@@ -10,8 +10,5 @@
     "tecnology": "test2 tecnology",
     "description": "test2 description",
     "imgPath": "test2 imgPath"
-  },
-  {
-    "test": [1, 2, 3]
   }
 ]
