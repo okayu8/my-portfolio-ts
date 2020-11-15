@@ -77,9 +77,13 @@ const IMG = styled.img`
 `;
 
 const StyledContent = styled.div`
-  margin-left: 15vw;
-  width: 80%;
+  width: 70%;
+  max-width: 1030px;
   z-index: 1;
+  @media only screen and (max-width: 780px) {
+    width: 80%;
+    margin-left: 15vw;
+  }
 `;
 
 const RippeleWrapper = styled.div`

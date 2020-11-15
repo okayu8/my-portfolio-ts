@@ -26,7 +26,7 @@ const WorksPanel = (props: IProps) => {
 };
 
 const Wrapper = styled.div`
-  width: 80%;
+  width: 100%;
   padding: 16px;
   margin-top: 40px;
   background: ${CONST.STYLE.COLOR.PANELBACKGROUND};
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   border-radius: 8px;
 `;
 const Name = styled.div`
-  font-size: 2.4em;
+  font-size: 2em;
 `;
 const P = styled.p`
   text-align: center;
