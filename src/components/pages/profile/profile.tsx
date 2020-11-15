@@ -2,11 +2,11 @@ import * as React from "react";
 import styled from "styled-components";
 import data from "data/profile.json";
 
-export type Data = typeof data;
+// export type Data = typeof data;
 
 const Profile = () => {
   return (
-    <ProfileContent style={{ whiteSpace: "pre-line" }}>
+    <ProfileContent>
       <h1>Profile</h1>
       <StyledName>{data.name}</StyledName>
       <P>{data.text}</P>

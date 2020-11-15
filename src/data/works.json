@@ -1,16 +1,14 @@
-{
-  "data": [
-    {
-      "name": "",
-      "tecnology": "",
-      "description": "",
-      "imgPath": ""
-    },
-    {
-      "name": "",
-      "tecnology": "",
-      "description": "",
-      "imgPath": ""
-    }
-  ]
-}
+[
+  {
+    "name": "test1",
+    "tecnology": "test1 tecnology",
+    "description": "test1 description",
+    "imgPath": "test1 imgPath"
+  },
+  {
+    "name": "test2",
+    "tecnology": "test2 tecnology",
+    "description": "test2 description",
+    "imgPath": "test2 imgPath"
+  }
+]

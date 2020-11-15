@@ -39,7 +39,7 @@ const StyledSideBar = styled.div`
   transform-origin: left top;
   transform: rotate(-5deg);
   animation: side-0 2s;
-  transition: 1s;
+  transition: 500ms;
   z-index: 1;
 
   @keyframes side-0 {
@@ -64,7 +64,7 @@ const StyledSideBar = styled.div`
     width: 80vw;
     padding-top: 48vh;
     animation: side-1 2s;
-    transition: 1s;
+    transition: 500ms;
 
     :hover {
       left: -24vw;
@@ -86,7 +86,7 @@ const StyledSideBar = styled.div`
 
 const TapButton = styled.div<ITapButtonProps>`
   position: absolute;
-  top: ${props => props.top}vh;
+  top: ${(props) => props.top}vh;
   right: 20px;
   width: 2px;
   height: 20px;
@@ -94,7 +94,7 @@ const TapButton = styled.div<ITapButtonProps>`
   border: solid 4px #fff;
   border-radius: 20px;
   opacity: 0.1;
-  animation: light- ${props => props.light_class} 5s infinite;
+  animation: light- ${(props) => props.light_class} 5s infinite;
 
   @keyframes light-1 {
     0% {
