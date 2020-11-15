@@ -9,7 +9,7 @@ const Profile = () => {
     <ProfileContent>
       <h1>Profile</h1>
       <StyledName>{data.name}</StyledName>
-      <P>{data.text}</P>
+      <Pre>{data.text}</Pre>
       <StyledContact />
     </ProfileContent>
   );
@@ -37,7 +37,7 @@ const StyledName = styled.p`
   margin-bottom: 32px;
 `;
 
-const P = styled.p`
+const Pre = styled.pre`
   font-size: 16px;
   overflow-wrap: break-word;
   @media only screen and (max-width: 780px) {
