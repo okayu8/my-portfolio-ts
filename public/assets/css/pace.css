@@ -68,7 +68,7 @@
 
 .pace .pace-activity {
   border-radius: 50%;
-  border: 5px solid #0195b9;
+  border: 5px solid #ffffff87;
   content: " ";
   display: block;
   position: absolute;
@@ -80,7 +80,7 @@
 
 .pace .pace-activity:after {
   border-radius: 50%;
-  border: 5px solid #ffffff;
+  border: 5px solid #ffffff87;
   content: " ";
   display: block;
   position: absolute;
@@ -97,7 +97,7 @@
 
 .pace .pace-activity:before {
   border-radius: 50%;
-  border: 5px solid #2c2c2ca2;
+  border: 5px solid #ffffff87;
   content: " ";
   display: block;
   position: absolute;

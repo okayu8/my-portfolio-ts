@@ -27,8 +27,8 @@ interface ITapButtonProps {
 }
 
 const StyledSideBar = styled.div`
-  position: relative;
-  top: -150vh;
+  position: absolute;
+  top: -20vh;
   left: -48vw;
   height: 200vh;
   width: 50vw;
@@ -40,7 +40,7 @@ const StyledSideBar = styled.div`
   transform: rotate(-5deg);
   animation: side-0 2s;
   transition: 500ms;
-  z-index: 1;
+  z-index: 3;
 
   @keyframes side-0 {
     0% {
@@ -59,7 +59,7 @@ const StyledSideBar = styled.div`
   }
 
   @media only screen and (max-width: 780px) {
-    top: -150vh;
+    top: -10vh;
     left: -80vw;
     width: 80vw;
     padding-top: 48vh;

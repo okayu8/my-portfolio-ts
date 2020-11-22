@@ -20,8 +20,9 @@ const Work = () => {
 
 const WorkContent = styled.div`
   text-align: left;
+  margin: 0 auto;
+  max-width: 1030px;
   height: 70vh;
-  overflow-y: scroll;
   animation: fadeIn-1 2s ease 0s 1 normal;
   -webkit-animation: fadeIn-1 2s ease 0s 1 normal;
   @keyframes fadeIn-1 {
@@ -34,6 +35,8 @@ const WorkContent = styled.div`
   }
 `;
 
-const ContentWrapper = styled.div``;
+const ContentWrapper = styled.div`
+  margin-bottom: 100px;
+`;
 
 export default Work;

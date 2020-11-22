@@ -18,20 +18,24 @@ const Footer = (props: IProps) => {
         />
         <StyledButton href="" name="Twitter" />
         <StyledButton href="" name="facebook" />
-        <StyledButton href="mailto:kataoka-yutaro@atomicstyle.work" name="Email" />
+        <StyledButton
+          href="mailto:kataoka-yutaro@atomicstyle.work"
+          name="Email"
+        />
       </ButtonArea>
     </StyledFooter>
   );
 };
 
 const StyledFooter = styled.div`
+  position: absolute;
   width: 120%;
   height: 300px;
   text-align: right;
   background-color: #474747;
   transform-origin: left bottom;
   transform: rotate(-5deg);
-  z-index: 1;
+  z-index: 2;
 `;
 
 const ButtonArea = styled.div`

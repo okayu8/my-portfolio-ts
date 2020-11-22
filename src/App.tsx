@@ -77,12 +77,13 @@ const IMG = styled.img`
 `;
 
 const StyledContent = styled.div`
-  width: 70%;
-  max-width: 1030px;
+  width: 100%;
+  margin-top: 80px;
+  overflow-y: scroll;
   z-index: 1;
   @media only screen and (max-width: 780px) {
-    width: 80%;
-    margin-left: 15vw;
+    padding-left: 15vw;
+    padding-right: 20px;
   }
 `;
 

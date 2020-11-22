@@ -26,7 +26,6 @@ const WorksPanel = (props: IProps) => {
 };
 
 const Wrapper = styled.div`
-  width: 100%;
   padding: 16px;
   margin-top: 40px;
   background: ${CONST.STYLE.COLOR.PANELBACKGROUND};

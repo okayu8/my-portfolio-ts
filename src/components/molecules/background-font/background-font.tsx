@@ -72,16 +72,15 @@ const StyledLastName = styled.span`
   font-size: 400px;
   color: rgba(221, 221, 221, 0.04);
   font-weight: 800;
-  position: absolute;
-  top: -40vh;
-  left: -5vw;
+  position: relative;
+  top: 8vh;
+  left: 6vw;
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
     color: rgba(221, 221, 221, 0.06);
     font-weight: 800;
-    position: absolute;
-    top: -28vh;
+    top: 8vh;
     left: 0;
   }
 `;
@@ -91,15 +90,14 @@ const StyledFirstName = styled.span`
   font-size: 400px;
   color: rgba(221, 221, 221, 0.1);
   font-weight: 800;
-  position: absolute;
-  top: -18vh;
-  left: 0vw;
+  position: relative;
+  top: -20vh;
+  left: 8vw;
   transform: translate(0%, 0%);
   @media only screen and (max-width: 780px) {
     font-size: 250px;
     color: rgba(221, 221, 221, 0.14);
     font-weight: 800;
-    position: absolute;
     top: -12vh;
     left: 10vw;
   }
